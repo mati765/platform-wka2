@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timeSinceLastDrop += Time.deltaTime;
+        timeSinceLastDrop += Time.deltaTime * 2;
         if(timeSinceLastDrop > 1)
         {
             int randomDrop = Random.Range(1, 4);
